@@ -3,8 +3,7 @@
 namespace Lasseeee\Info;
 
 use Illuminate\Routing\Router;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\ServiceProvider;
+use Lasseeee\Info\Facades\Info;use Illuminate\Support\ServiceProvider;
 use Lasseeee\Info\Http\Middleware\Inform;
 
 class InfoServiceProvider extends ServiceProvider
@@ -16,7 +15,9 @@ class InfoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/config/config.php', 'info');
+        $this->app->bind('info', function($app) {
+            return new Info();
+        });
     }
 
     /**
@@ -28,10 +29,6 @@ class InfoServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/config/config.php' => config_path('info.php'),
-            ], 'config');
-
-            $this->publishes([
                 __DIR__.'/resources/views' => resource_path('views/vendor/info'),
             ], 'views');
 
@@ -40,8 +37,6 @@ class InfoServiceProvider extends ServiceProvider
             ]);
         }
 
-        $this->registerRoutes();
-
         $this->loadViewsFrom(__DIR__.'/resources/views', 'info');
 
         $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'info');
@@ -49,20 +44,5 @@ class InfoServiceProvider extends ServiceProvider
         $router = $this->app->make(Router::class);
 
         $router->aliasMiddleware('inform', Inform::class);
-    }
-
-    protected function registerRoutes()
-    {
-        Route::group($this->routeConfiguration(), function () {
-            $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-        });
-    }
-
-    protected function routeConfiguration()
-    {
-        return [
-            'prefix' => config('info.prefix'),
-            'middleware' => config('info.middleware'),
-        ];
     }
 }
