@@ -1,4 +1,4 @@
-@component('info.terms')
+@component('info::terms')
 For å kunne bruke dette systemet som frivillig må du oppfylle noen vilkår:
 
 * Du må være registrert som aktiv frivillig ved {{ $currentTenant->name }} Røde Kors.

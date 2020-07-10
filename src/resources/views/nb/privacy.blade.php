@@ -1,4 +1,4 @@
-@component('info.privacy')
+@component('info::privacy')
 ## Hvem er behandlingsansvarlig?
 
 {{ $currentTenant->name }} Røde Kors, ved daglig leder, er behandlingsansvarlig, og vil behandle og være ansvarlig for personopplysningene som lagres om deg i dette datasystemet for koordinering av {{ config('app.name') }}.

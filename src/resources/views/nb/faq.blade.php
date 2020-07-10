@@ -1,4 +1,4 @@
-@component('info.faq')
+@component('info::faq')
 ## Hvorfor må jeg godta avtalevilkårene og personvernerklæringen?
 
 For at {{ optional($currentTenant)->name }} Røde Kors skal kunne oppfylle avtalevilkårene er vi nødt til å lagre noen personopplysninger om deg, som nevnt i personvernerklæringen.
