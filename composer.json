@@ -12,7 +12,10 @@
         "laravel": {
             "providers": [
                 "Lasseeee\\Info\\InfoServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Markdown": "\\GrahamCampbell\\Markdown\\Facades\\Markdown"
+            }
         }
     },
     "autoload": {
