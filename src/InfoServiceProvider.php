@@ -37,6 +37,12 @@ class InfoServiceProvider extends ServiceProvider
             ]);
         }
 
+        if (! class_exists('AddInformedAtColumnToUsersTable')) {
+            $this->publishes([
+                __DIR__ . '/../database/migrations/add_informed_at_to_users_table.php.stub.php' => database_path('migrations/' . date('Y_m_d_His', time()) . 'add_informed_at_to_users_table.php'),
+            ], 'migrations');
+        }
+
         $this->loadViewsFrom(__DIR__.'/resources/views', 'info');
 
         $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'info');
