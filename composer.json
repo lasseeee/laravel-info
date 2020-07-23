@@ -3,7 +3,7 @@
     "description": "Add support for general info in Laravel projects",
     "type": "library",
     "require": {
-        "graham-campbell/markdown": "^12.0",
+        "graham-campbell/markdown": "^13.0",
         "laracasts/flash": "^3.1"
     },
     "minimum-stability": "dev",
