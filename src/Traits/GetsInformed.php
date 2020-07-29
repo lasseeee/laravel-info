@@ -13,4 +13,12 @@ trait GetsInformed
             'informed_at' => now(),
         ]);
     }
+
+    /**
+     * Determine whether this user is not informed.
+     */
+    public function isNotInformed()
+    {
+        return is_null($this->informed_at);
+    }
 }
