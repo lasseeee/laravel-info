@@ -13,20 +13,20 @@ class Inform
     {
         if (auth()->user()->isNotInformed()) {
             flash()->info(
-                trans('We have updated our') .
+                trans('info::messages.updated') .
                 ' <a href="' . route('info.terms', $request->tenant) . '" style="color:#fff;text-decoration:underline!important;">' .
-                trans('terms of service') .
+                trans('info::messages.terms') .
                 '</a> ' .
-                trans('and') .
+                trans('info::messages.and') .
                 ' <a href="' . route('info.privacy', $request->tenant) . '" style="color:#fff;text-decoration:underline!important;">' .
-                trans('privacy policy') .
+                trans('info::messages.privacy') .
                 '</a>. ' .
-                trans('By continued use of this system, you agree to these.') .
+                trans('info::messages.agree') .
                 ' <a href="' . route('info.understand', $request->tenant) . '" class="btn btn-xs btn-primary margin-left">' .
-                trans('I understand') .
+                trans('info::messages.understand') .
                 '</a>' .
                 ' <a href="' . route('info.faq', $request->tenant) . '" class="btn btn-xs btn-default margin-left">' .
-                trans('Learn more') .
+                trans('info::messages.more') .
                 '</a>'
             )
             ->important();

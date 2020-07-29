@@ -8,7 +8,7 @@ class UnderstandController extends Controller
     {
         auth()->user()->inform();
 
-        flash()->success(trans('info::messages.understand'));
+        flash()->success(trans('info::messages.understood'));
 
         return back();
     }
