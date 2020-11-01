@@ -1,0 +1,2 @@
+@component('info::news')
+@endcomponent
