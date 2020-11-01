@@ -2,11 +2,12 @@
 
 namespace Lasseeee\Info\Facades;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\Facades\Route;
 use Lasseeee\Info\Http\Controllers\FAQController;
-use Lasseeee\Info\Http\Controllers\TermsController;
+use Lasseeee\Info\Http\Controllers\NewsController;
 use Lasseeee\Info\Http\Controllers\PrivacyController;
+use Lasseeee\Info\Http\Controllers\TermsController;
 use Lasseeee\Info\Http\Controllers\UnderstandController;
 
 class Info extends Facade
