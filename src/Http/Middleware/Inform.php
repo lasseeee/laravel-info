@@ -14,18 +14,18 @@ class Inform
         if (auth()->user()->isNotInformed()) {
             flash()->info(
                 trans('info::messages.updated') .
-                ' <a href="' . route('info.terms', $request->tenant) . '" style="color:#fff;text-decoration:underline!important;">' .
+                ' <a href="' . route('info.terms') . '" style="color:#fff;text-decoration:underline!important;">' .
                 trans('info::messages.terms') .
                 '</a> ' .
                 trans('info::messages.and') .
-                ' <a href="' . route('info.privacy', $request->tenant) . '" style="color:#fff;text-decoration:underline!important;">' .
+                ' <a href="' . route('info.privacy') . '" style="color:#fff;text-decoration:underline!important;">' .
                 trans('info::messages.privacy') .
                 '</a>. ' .
                 trans('info::messages.agree') .
-                ' <a href="' . route('info.understand', $request->tenant) . '" class="btn btn-xs btn-primary margin-left">' .
+                ' <a href="' . route('info.understand') . '" class="btn btn-xs btn-primary margin-left">' .
                 trans('info::messages.understand') .
                 '</a>' .
-                ' <a href="' . route('info.faq', $request->tenant) . '" class="btn btn-xs btn-default margin-left">' .
+                ' <a href="' . route('info.faq') . '" class="btn btn-xs btn-default margin-left">' .
                 trans('info::messages.more') .
                 '</a>'
             )
