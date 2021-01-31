@@ -3,7 +3,8 @@
 namespace Lasseeee\Info;
 
 use Illuminate\Routing\Router;
-use Lasseeee\Info\Facades\Info;use Illuminate\Support\ServiceProvider;
+use Lasseeee\Info\Facades\Info;
+use Illuminate\Support\ServiceProvider;
 use Lasseeee\Info\Http\Middleware\Inform;
 
 class InfoServiceProvider extends ServiceProvider
