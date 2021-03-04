@@ -16,8 +16,7 @@ class Inform
                 trans('info::messages.updated') .
                 ' <a href="' . route('info.privacy') . '" style="color:#fff;text-decoration:underline!important;">' .
                 trans('info::messages.privacy') .
-                '</a>. ' .
-                trans('info::messages.agree') .
+                '</a>' .
                 ' <a href="' . route('info.understand') . '" class="btn btn-xs btn-primary margin-left">' .
                 trans('info::messages.understand') .
                 '</a>'
