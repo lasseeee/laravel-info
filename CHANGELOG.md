@@ -1,5 +1,10 @@
 # Release Notes
 
+## [v3.2.0 (2021-03-04)](https://github.com/lasseeee/laravel-info/compare/v3.1.0...v3.2.0)
+
+### Changed
+- Simplify language further
+
 ## [v3.1.0 (2021-03-04)](https://github.com/lasseeee/laravel-info/compare/v3.0.0...v3.1.0)
 
 ### Removed
