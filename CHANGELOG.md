@@ -1,4 +1,8 @@
 # Release Notes
+## [v3.4.0 (2022-09-03)](https://github.com/lasseeee/laravel-info/compare/v3.2.0...v3.4.0)
+
+### Changed
+- Bump graham-campbell/markdown to v14.0
 
 ## [v3.3.0 (2021-10-01)](https://github.com/lasseeee/laravel-info/compare/v3.2.0...v3.3.0)
 
