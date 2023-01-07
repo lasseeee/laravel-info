@@ -1,4 +1,10 @@
 # Release Notes
+
+## [v4.0.0 (2023-01-07)](https://github.com/lasseeee/laravel-info/compare/v3.4.0...v4.0.0)
+
+### Removed
+- Everything regarding terms
+
 ## [v3.4.0 (2022-09-03)](https://github.com/lasseeee/laravel-info/compare/v3.2.0...v3.4.0)
 
 ### Changed
