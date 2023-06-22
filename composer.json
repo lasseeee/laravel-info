@@ -3,8 +3,8 @@
     "description": "Add support for general info in Laravel projects",
     "type": "library",
     "require": {
-        "graham-campbell/markdown": "^14.0",
-        "laracasts/flash": "^3.1"
+        "graham-campbell/markdown": "^15.0",
+        "laracasts/flash": "^3.2.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
