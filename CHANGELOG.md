@@ -1,5 +1,10 @@
 # Release Notes
 
+## [v5.0.0 (2023-06-22)](https://github.com/lasseeee/laravel-info/compare/v4.0.0...v5.0.0)
+
+### Added
+- Support for Laravel 10
+
 ## [v4.0.0 (2023-01-07)](https://github.com/lasseeee/laravel-info/compare/v3.4.0...v4.0.0)
 
 ### Removed
