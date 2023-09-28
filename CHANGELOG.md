@@ -1,5 +1,10 @@
 # Release Notes
 
+## [v5.0.1 (2023-09-27)](https://github.com/lasseeee/laravel-info/compare/v5.0.0...v5.0.1)
+
+### Fixed
+- User clicks understood while not logged in route bug
+
 ## [v5.0.0 (2023-06-22)](https://github.com/lasseeee/laravel-info/compare/v4.0.0...v5.0.0)
 
 ### Added
