@@ -1,5 +1,10 @@
 # Release Notes
 
+## [v5.1.0 (2026-03-01)](https://github.com/lasseeee/laravel-info/compare/v5.0.1...v5.1.0)
+
+### Added
+- Help pages
+
 ## [v5.0.1 (2023-09-27)](https://github.com/lasseeee/laravel-info/compare/v5.0.0...v5.0.1)
 
 ### Fixed
