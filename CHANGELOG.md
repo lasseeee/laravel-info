@@ -1,5 +1,10 @@
 # Release Notes
 
+## [v5.3.0 (2026-03-01)](https://github.com/lasseeee/laravel-info/compare/v5.2.0...v5.3.0)
+
+### Added
+- Support for GrahamCampbell/Laravel-Markdown 16.0
+
 ## [v5.2.2 (2026-03-01)](https://github.com/lasseeee/laravel-info/compare/v5.2.1...v5.2.2)
 
 ### Fixed
