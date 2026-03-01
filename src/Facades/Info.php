@@ -32,6 +32,8 @@ class Info extends Facade
             ->name('info.understand');
             Route::get('news', NewsController::class)
             ->name('info.news');
+            Route::get('news', HelpController::class)
+            ->name('info.help');
         });
     }
 }
