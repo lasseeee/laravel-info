@@ -1,5 +1,10 @@
 # Release Notes
 
+## [v5.3.1 (2026-03-01)](https://github.com/lasseeee/laravel-info/compare/v5.3.0...v5.3.1)
+
+### Fixed
+- Open external link in new window
+
 ## [v5.3.0 (2026-03-01)](https://github.com/lasseeee/laravel-info/compare/v5.2.0...v5.3.0)
 
 ### Added
